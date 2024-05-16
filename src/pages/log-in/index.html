@@ -1,0 +1,88 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Account sign in: Starbucks Coffee Company</title>
+    <link rel="icon" href="https://www.starbucks.com/next_static/icons/favicon-16x16.png" />
+
+    <link rel="stylesheet" href="../../styles/output.css">
+    <link rel="stylesheet" href="../../styles/style.css">
+    <link rel="stylesheet" href="../../styles/wave.css">
+    <!-- font and icon-->
+    <link href="https://db.onlinewebfonts.com/c/d7e8a95865396cddca89b00080d2cba6?family=SoDo+Sans+SemiBold"
+        rel="stylesheet">
+    <script src="https://kit.fontawesome.com/cc39ea921b.js" crossorigin="anonymous"></script>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link
+        href="https://fonts.googleapis.com/css2?family=Fira+Sans:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&family=Noto+Sans+JP:wght@100..900&display=swap"
+        rel="stylesheet">
+    <!-- tailwind link -->
+    <script src="https://cdn.tailwindcss.com"></script>
+</head>
+
+<body>
+    <section class="w-full max-w-screen-2xl mx-auto">
+        <!-- create account -->
+        <div>
+            <div class="flex flex-col items-center">
+                <h1 class="md:text-3xl text-2xl text-center font-semibold md:py-12 py-8 sodan">Sign in or create an
+                    account</h1>
+                <div class=" md:p-8 px-2 pb-1 md:border rounded-xl md:shadow-md max-w-[510px] w-full">
+                    <h1 class="text-sm md:text-base"><span class="text-[#00754a]">*</span> indicates required field</h1>
+
+                    <input-field-component 
+                    labelText="Username or email
+                    address" 
+                    labelReq="Enter an email/username.">
+                    </input-field-component>
+
+                    <input-field-component 
+                    labelText="Password" 
+                    labelReq="Enter an password."
+                    customType="password">
+                    </input-field-component>
+
+                    <div class="flex gap-3 mt-8 ">
+                        <input type="checkbox" class=" size-6 accent-[#00754a]">
+                        <h1 class="md:text-base text-sm sodan font-medium mt-1 md:mt-0">Keep me signed in. <a href=""
+                                class="text-[#056543] font-bold underline hover:no-underline">Details</a></h1>
+                    </div>
+
+
+                    <div class="mt-8 flex flex-col w-full text-[#056543] font-extrabold gap-2">
+                        <a class="underline hover:no-underline" href="">Forgot your username?</a>
+                        <a class="underline hover:no-underline" href="">Forgot your password?</a>
+                    </div>
+                    <button-component></button-component>
+                    <div class="w-full flex justify-end bg-green-200">
+                        <a href="../../pages/home/home.html">
+                            <button class=" bg-[#00754a]  px-6 py-4  rounded-full text-white shadow-lg text-lg font-medium tracking-[1px]">
+                                Sign in
+                            </button>
+                        </a>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <!-- join now -->
+        <div>
+            <div class="sm:w-[350px] mx-auto text-center max-w-full  md:mb-96 w-auto pt-24 mb-[500px]">
+                <h1 class="text-sm hind font-semibold tracking-[1px] text-[#00754a] leading-loose">JOIN STARBUCKS<span
+                        class="text-xs font-light font-sans">® </span>REWARDS</h1>
+                <h1 class="my-4 font-normal">Join Starbucks<span class="text-xs">®</span> Rewards to earn free food and
+                    drinks, get free refills, pay and order with your phone, and more.</h1>
+                <a href="../../pages/join-now/join-now.html"
+                    class="text-[#00754a] py-2 px-4 border-[1px] font-semibold border-[#00754a] hover:bg-[#e3edea] duration-200 rounded-full ">Join
+                    now</a>
+            </div>
+            <hr>
+        </div>
+
+    </section>
+</body>
+<script type="module" src="../../components/layout.js"></script>
+
+</html>
