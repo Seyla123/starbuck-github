@@ -1,0 +1,411 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+	<meta charset="UTF-8" />
+	<meta name="viewport" content="width=device-width, initial-scale=1.0" />
+	<title>Menu: Starbucks Coffee Company</title>
+	<link rel="icon" href="https://www.starbucks.com/next_static/icons/favicon-16x16.png" />
+
+	<link rel="stylesheet" href="../../styles/output.css" />
+	<link rel="stylesheet" href="../../styles/style.css" />
+	<!-- font -->
+	<link href="https://db.onlinewebfonts.com/c/d7e8a95865396cddca89b00080d2cba6?family=SoDo+Sans+SemiBold"rel="stylesheet" />
+	<script src="https://kit.fontawesome.com/cc39ea921b.js" crossorigin="anonymous"></script>
+	<link rel="preconnect" href="https://fonts.googleapis.com" />
+	<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+	<link href="https://fonts.googleapis.com/css2?family=Fira+Sans:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&family=Noto+Sans+JP:wght@100..900&display=swap" rel="stylesheet" />
+	<!-- tailwind link -->
+	<script src="https://cdn.tailwindcss.com"></script>
+</head>
+
+<body>
+    <!--call navbar component -->
+    <navbar-component
+	isMenuPage = "true"
+	></navbar-component>
+	<!-- sub navbar -->
+	<sub-navbar-component page="menu"></sub-navbar-component>
+	<section class="md:px-[102px] px-6 pt-10 pb-20 flex justify-start xl:gap-40 gap-20">
+		<!-- left sidebar-->
+		<aside class="max-w-[140px] flex-col gap-10 hidden lg:flex">
+			<ul class="flex flex-col gap-4 text-[#888]">
+				<h2 class="font-semibold text-lg text-black">Drinks</h2>
+				<li>
+					<button class="productBtn text-start" id="hotCoffeesBtn" data-target="hotCoffeesComponent">
+						Hot Coffees
+					</button>
+				</li>
+				<li>
+					<button class="productBtn text-start" id="coldCoffeesBtn" data-target="coldCoffeesComponent">
+						Cold Coffees
+					</button>
+				</li>
+				<li>
+					<button class="productBtn text-start" id="starbucksRefreshersBeveragesBtn"
+						data-target="starbucksRefreshersBeveragesComponent">
+						Starbucks Refreshers Beverages
+					</button>
+				</li>
+				<li>
+					<button class="productBtn text-start" id="frappuccinoBlendedBeveragesBtn"
+						data-target="frappuccinoBlendedBeveragesComponent">
+						Frappuccino Blended Beverages
+					</button>
+				</li>
+				<li>
+					<button class="productBtn text-start" id="icedTeasBtn" data-target="icedTeasComponent">
+						Iced Teas
+					</button>
+				</li>
+				<li>
+					<button class="productBtn text-start" id="hotTeasBtn" data-target="hotTeasComponent">
+						Hot Teas
+					</button>
+				</li>
+				<li>
+					<button class="productBtn text-start" id="hotBeveragesBtn" data-target="hotBeveragesComponent">
+						Hot Beverages
+					</button>
+				</li>
+				<li>
+					<button class="productBtn text-start" id="bottledBeveragesBtn"
+						data-target="bottledBeveragesComponent">
+						Bottled Beverages
+					</button>
+				</li>
+			</ul>
+
+			<ul class="flex flex-col gap-4 text-[#888]">
+				<h2 class="font-semibold text-lg text-black">Foods</h2>
+				<li>
+					<button class="productBtn text-start" id="hotBreakfastBtn" data-target="hotBreakfastComponent">
+						Hot Breakfast
+					</button>
+				</li>
+				<li>
+					<button class="productBtn text-start" id="oatmealYogurtBtn" data-target="oatmealYogurtComponent">
+						Oatmeal & Yogurt
+					</button>
+				</li>
+				<li>
+					<button class="productBtn text-start" id="bakeryBtn" data-target="bakeryComponent">
+						Bakery
+					</button>
+				</li>
+				<li>
+					<button class="productBtn text-start" id="lunchBtn" data-target="lunchComponent">
+						Lunch
+					</button>
+				</li>
+				<li>
+					<button class="productBtn text-start" id="snackSweetsBtn" data-target="snacksSweetsComponent">
+						Snacks & Sweets
+					</button>
+				</li>
+			</ul>
+
+			<ul class="flex flex-col gap-4 text-[#888]">
+				<h2 class="font-semibold text-lg text-black">At Home Coffee</h2>
+				<li>
+					<button class="productBtn text-start" id="wholeBeanBtn" data-target="wholeBeanComponent">
+						Whole Bean
+					</button>
+				</li>
+				<li>
+					<button class="productBtn text-start" id="viaInstantBtn" data-target="viaInstantComponent">
+						VIA® Instant
+					</button>
+				</li>
+			</ul>
+
+			<ul class="flex flex-col gap-4 text-[#888]">
+				<h2 class="font-semibold text-lg text-black">Merchandise</h2>
+				<li>
+					<button class="productBtn text-start" id="coldCupsBtn" data-target="coldCupsComponent">
+						Cold Cups
+					</button>
+				</li>
+				<li>
+					<button class="productBtn text-start" id="tumblersBtn" data-target="tumblersComponent">
+						Tumblers
+					</button>
+				</li>
+				<li>
+					<button class="productBtn text-start" id="mugsBtn" data-target="mugsComponent">
+						Mugs
+					</button>
+				</li>
+				<li>
+					<button class="productBtn text-start" id="otherBtn" data-target="otherComponent">
+						Other
+					</button>
+				</li>
+			</ul>
+		</aside>
+
+		<!-- Product list component -->
+		<section class="w-full">
+			<!-- Main Coffees -->
+			<div id="mainComponent" class="w-full lg:max-w-[80%] max-w-[100%] productComponent">
+				<h2 class="mt-2 font-bold text-xl lg:text-3xl">Menu</h2>
+				<!-- Drink -->
+				<div class="mt-8">
+					<h2 class="font-bold text-xl lg:text-3xl">Drink</h2>
+					<hr class="mt-4 pb-6" />
+
+					<div class="grid md:grid-cols-2 lg:gap-8 gap-4">
+						<!-- Card for Hot Coffees -->
+						<button class="productBtn flex items-center gap-4" id="hotCoffeesBtn"
+							data-target="hotCoffeesComponent">
+							<div class="flex items-center text-start gap-4">
+								<img class="lg:w-28 lg:h-28 w-20 h-20 object-cover" src="../../images/menu/1.png"
+									alt="Hot Coffees" />
+								<h4 class="text-lg lg:text-xl">Hot Coffees</h4>
+							</div>
+						</button>
+
+						<!-- Card for Cold Coffees -->
+						<button class="productBtn flex items-center gap-4" id="coldCoffeesBtn"
+							data-target="coldCoffeesComponent">
+							<div class="flex items-center text-start gap-4">
+								<img class="lg:w-28 lg:h-28 w-20 h-20 object-contain" src="../../images/menu/2.png"
+									alt="Cold Coffees" />
+								<h4 class="text-lg lg:text-xl">Cold Coffees</h4>
+							</div>
+						</button>
+
+						<!-- Card for Starbucks Refreshers Beverages -->
+						<button class="productBtn flex items-center gap-4" id="starbucksRefreshersBeveragesBtn"
+							data-target="starbucksRefreshersBeveragesComponent">
+							<div class="flex items-center text-start gap-4">
+								<img class="lg:w-28 lg:h-28 w-20 h-20 object-contain" src="../../images/menu/3.png"
+									alt="Starbucks Refreshers Beverages" />
+								<h4 class="text-lg lg:text-xl">
+									Starbucks Refreshers Beverages
+								</h4>
+							</div>
+						</button>
+
+						<!-- Card for Frappuccino Blended Beverages -->
+						<button class="productBtn flex items-center gap-4" id="frappuccinoBlendedBeveragesBtn"
+							data-target="frappuccinoBlendedBeveragesComponent">
+							<div class="flex items-center text-start gap-4">
+								<img class="lg:w-28 lg:h-28 w-20 h-20 object-contain" src="../../images/menu/4.png"
+									alt="Frappuccino Blended Beverages" />
+								<h4 class="text-lg lg:text-xl">
+									Frappuccino Blended Beverages
+								</h4>
+							</div>
+						</button>
+					</div>
+				</div>
+				<!-- Food -->
+				<div class="mt-8">
+					<h2 class="font-bold text-xl lg:text-3xl">Food</h2>
+					<hr class="mt-4 pb-6" />
+
+					<div class="grid md:grid-cols-2 lg:gap-8 gap-4">
+						<!-- Card for Hot Breakfast -->
+						<button class="productBtn flex items-center gap-4" id="hotBreakfastBtn"
+							data-target="hotBreakfastComponent">
+							<div class="flex items-center text-start gap-4">
+								<img class="lg:w-28 lg:h-28 w-20 h-20 object-contain" src="../../images/menu/food1.png"
+									alt="Hot Breakfast" />
+								<h4 class="text-lg lg:text-xl">Hot Breakfast</h4>
+							</div>
+						</button>
+
+						<!-- Card for Bakery -->
+						<button class="productBtn flex items-center gap-4" id="oatmealYogurtBtn"
+							data-target="oatmealYogurtComponent">
+							<div class="flex items-center text-start gap-4">
+								<img class="lg:w-28 lg:h-28 w-20 h-20 object-contain" src="../../images/menu/food2.png"
+									alt="Bakery" />
+								<h4 class="text-lg lg:text-xl">Oatmeal & Yogurt</h4>
+							</div>
+						</button>
+						<button class="productBtn flex items-center gap-4" id="bakeryBtn" data-target="bakeryComponent">
+							<div class="flex items-center text-start gap-4">
+								<img class="lg:w-28 lg:h-28 w-20 h-20 object-contain" src="../../images/menu/food5.png"
+									alt="Bakery" />
+								<h4 class="text-lg lg:text-xl">Bakery</h4>
+							</div>
+						</button>
+						<button class="productBtn flex items-center gap-4" id="lunchBtn" data-target="lunchComponent">
+							<div class="flex items-center text-start gap-4">
+								<img class="lg:w-28 lg:h-28 w-20 h-20 object-contain" src="../../images/menu/food3.png"
+									alt="Bakery" />
+								<h4 class="text-lg lg:text-xl">Lunch</h4>
+							</div>
+						</button>
+						<button class="productBtn flex items-center gap-4" id="snackSweetsBtn"
+							data-target="snacksSweetsComponent">
+							<div class="flex items-center text-start gap-4">
+								<img class="lg:w-28 lg:h-28 w-20 h-20 object-contain" src="../../images/menu/food4.png"
+									alt="Bakery" />
+								<h4 class="text-lg lg:text-xl">Snacks & Sweets</h4>
+							</div>
+						</button>
+					</div>
+				</div>
+				<!-- At Home Coffee -->
+				<div class="mt-8">
+					<h2 class="font-bold text-xl lg:text-3xl">At Home Coffee</h2>
+					<hr class="mt-4 pb-6" />
+
+					<div class="grid md:grid-cols-2 lg:gap-8 gap-4">
+						<!-- Card for Whole Bean -->
+						<button class="productBtn flex items-center gap-4" id="wholeBeanBtn"
+							data-target="wholeBeanComponent">
+							<div class="flex items-center text-start gap-4">
+								<img class="lg:w-28 lg:h-28 w-20 h-20 object-contain rounded-full"
+									src="../../images/menu/cold-cup-img/p1.jpg" alt="Whole Bean" />
+								<h4 class="text-lg lg:text-xl">Whole Bean</h4>
+							</div>
+						</button>
+
+						<!-- Card for VIA® Instant -->
+						<button class="productBtn flex items-center gap-4" id="viaInstantBtn"
+							data-target="viaInstantComponent">
+							<div class="flex items-center text-start gap-4">
+								<img class="lg:w-28 lg:h-28 w-20 h-20 object-contain rounded-full"
+									src="../../images/menu/cold-cup-img/p2.jpg" alt="VIA® Instant" />
+								<h4 class="text-lg lg:text-xl">VIA® Instant</h4>
+							</div>
+						</button>
+					</div>
+				</div>
+			</div>
+
+			<!-- Hot Coffees -->
+			<div id="hotCoffeesComponent" class="productComponent" style="display: none">
+				<hot-coffee-products-component title="Hot Coffees"></hot-coffee-products-component>
+			</div>
+
+			<!-- Cold Coffees -->
+			<div id="coldCoffeesComponent" class="productComponent" style="display: none">
+				<cold-coffee-products-component title="Cold Coffees"></cold-coffee-products-component>
+			</div>
+
+			<!-- Starbucks Refreshers® Beverages -->
+			<div id="starbucksRefreshersBeveragesComponent" class="productComponent" style="display: none">
+				<starbucks-refresher-beverages-component
+					title="Starbucks Refreshers® Beverages"></starbucks-refresher-beverages-component>
+			</div>
+
+			<!-- Frappuccino® Blended Beverages -->
+			<div id="frappuccinoBlendedBeveragesComponent" class="productComponent" style="display: none">
+				<frappuccino-blended-beverages-component
+					title="Frappuccino® Blended Beverages"></frappuccino-blended-beverages-component>
+			</div>
+
+			<!-- Iced Teas -->
+			<div id="icedTeasComponent" class="productComponent" style="display: none">
+				<iced-teas-component title="Iced Teas"></iced-teas-component>
+			</div>
+
+			<!-- Hot Teas -->
+			<div id="hotTeasComponent" class="productComponent" style="display: none">
+				<hot-teas-component title="Hot Teas"></hot-teas-component>
+			</div>
+
+			<!-- Hot Beverages -->
+			<div id="hotBeveragesComponent" class="productComponent" style="display: none">
+				<hot-beverages-component title="Hot Beverages"></hot-beverages-component>
+			</div>
+
+			<!-- Bottled Beverages -->
+			<div id="bottledBeveragesComponent" class="productComponent" style="display: none">
+				<bottled-beverages-component title="Bottled Beverages"></bottled-beverages-component>
+			</div>
+
+			<!-- Hot Breakfast -->
+			<div id="hotBreakfastComponent" class="productComponent" style="display: none">
+				<hot-breakfast-component title="Hot Breakfast"></hot-breakfast-component>
+			</div>
+
+			<!-- Oatmeal & Yogurt -->
+			<div id="oatmealYogurtComponent" class="productComponent" style="display: none">
+				<oatmeal-yogurt-component title="Oatmeal & Yogurt"></oatmeal-yogurt-component>
+			</div>
+
+			<!-- Bakery -->
+			<div id="bakeryComponent" class="productComponent" style="display: none">
+				<bakery-component title="Bakery"></bakery-component>
+			</div>
+
+			<!-- Lunch -->
+			<div id="lunchComponent" class="productComponent" style="display: none">
+				<lunch-component title="Lunch"></lunch-component>
+			</div>
+
+			<!-- Snacks & Sweets -->
+			<div id="snacksSweetsComponent" class="productComponent" style="display: none">
+				<snacks-sweets-component title="Snacks & Sweets"></snacks-sweets-component>
+			</div>
+
+			<!-- Whole Bean -->
+			<div id="wholeBeanComponent" class="productComponent" style="display: none">
+				<whole-bean-component title="Whole Bean"></whole-bean-component>
+			</div>
+
+			<!-- VIA® Instant -->
+			<div id="viaInstantComponent" class="productComponent" style="display: none">
+				<via-instant-component title="VIA® Instant"></via-instant-component>
+			</div>
+
+			<!-- Cold Cups -->
+			<div id="coldCupsComponent" class="productComponent" style="display: none">
+				<cold-cups-component title="Cold Cups"></cold-cups-component>
+			</div>
+
+			<!-- Tumblers -->
+			<div id="tumblersComponent" class="productComponent" style="display: none">
+				<tumblers-component title="Tumblers"></tumblers-component>
+			</div>
+
+			<!-- Mugs -->
+			<div id="mugsComponent" class="productComponent" style="display: none">
+				<mugs-component title="Mugs"></mugs-component>
+			</div>
+
+			<!-- Other -->
+			<div id="otherComponent" class="productComponent" style="display: none">
+				<other-component title="Other"></other-component>
+			</div>
+		</section>
+	</section>
+
+	<hr class="m-8" />
+	<div class="lg:px-28 px-4">
+		<footer-component></footer-component>
+	</div>
+	<choose-store-component></choose-store-component>
+</body>
+
+<!-- script link component home page -->
+<script type="module" src="../../script/menu/menu.js"></script>
+<script type="module" src="../../script/components/layout.js"></script>
+<script src="../../script/menu/category-product/hot-coffees.js"></script>
+<script src="../../script/menu/category-product/cold-coffees.js"></script>
+<script src="../../script/menu/category-product/starbucks-refresher-beverages.js"></script>
+<script src="../../script/menu/category-product/frappuccino-blended-beverages.js"></script>
+<script src="../../script/menu/category-product/iced-teas.js"></script>
+<script src="../../script/menu/category-product/hot-teas.js"></script>
+<script src="../../script/menu/category-product/hot-beverages.js"></script>
+<script src="../../script/menu/category-product/bottled-beverages.js"></script>
+<script src="../../script/menu/category-product/hot-breakfast.js"></script>
+<script src="../../script/menu/category-product/oatmeal-yogurt.js"></script>
+<script src="../../script/menu/category-product/bakery.js"></script>
+<script src="../../script/menu/category-product/lunch.js"></script>
+<script src="../../script/menu/category-product/snacks-sweets.js"></script>
+<script src="../../script/menu/category-product/whole-bean.js"></script>
+<script src="../../script/menu/category-product/via-instant.js"></script>
+<script src="../../script/menu/category-product/cold-cups.js"></script>
+<script src="../../script/menu/category-product/tumblers.js"></script>
+<script src="../../script/menu/category-product/mugs.js"></script>
+<script src="../../script/menu/category-product/other.js"></script>
+
+
+</html>

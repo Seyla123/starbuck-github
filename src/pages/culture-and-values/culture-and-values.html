@@ -1,0 +1,193 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Culture and Values: Starbucks Coffee Company</title>
+    <link rel="icon" href="https://www.starbucks.com/next_static/icons/favicon-16x16.png" />
+    <!-- Linking CSS files -->
+    <link rel="stylesheet" href="../../styles/output.css">
+    <link rel="stylesheet" href="../../styles/style.css">
+    <!-- Linking custom font -->
+    <link href="https://db.onlinewebfonts.com/c/d7e8a95865396cddca89b00080d2cba6?family=SoDo+Sans+SemiBold" rel="stylesheet">
+    <!-- Linking Font Awesome for icons -->
+    <script src="https://kit.fontawesome.com/cc39ea921b.js" crossorigin="anonymous"></script>
+    <!-- Preconnecting to Google Fonts -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <!-- Linking Google Fonts -->
+    <link href="https://fonts.googleapis.com/css2?family=Fira+Sans:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&family=Noto+Sans+JP:wght@100..900&display=swap" rel="stylesheet">
+    <!-- Linking Tailwind CSS -->
+    <script src="https://cdn.tailwindcss.com"></script>
+</head>
+
+<body>
+    <!-- navbar component -->
+    <navbar-component></navbar-component>
+    <!-- careers header -->
+    <career-header-component></career-header-component>
+    <!-- content -->
+    <section class="flex lg:flex-row flex-col">
+        <!-- left side contents -->
+        <div class="lg:w-[40%] flex">
+            <div class="lg:fixed relative lg:top-10 lg:w-[40%] w-full lg:h-[98vh] h-[80vh] flex items-end">
+                <img src="../../images/careers/coffee.jpeg" class="w-full h-full object-cover" />
+                <div class="absolute bottom-0 h-[50%] w-full bg-gradient-to-t from-black sodan text-white p-20">
+                    <div class="absolute bottom-10 flex flex-col gap-4 items-start">
+                        <h1 class="sodosan font-bold text-[19px] gap-1 tracking-wide">
+                            CULTURE AND VALUES
+                        </h1>
+                        <h2 class="text-[20px]">
+                            Your personality. Our heritage. The perfect blend.
+                        </h2>
+                        <button class="rounded-full border-solid border border-white text flex items-center gap-1 px-4 py-1">
+                            <span><img class="w-5" src="../../images/careers/icon/play-button (1).svg" alt="" /></span>
+                            Watch video
+                        </button>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div class="lg:w-[60%] w-full">
+            <!-- right side contents -->
+            <div class="max-w-[700px] mx-auto px-4 h-auto">
+                <!-- expect more than coffee -->
+                <div class="py-8 sodan">
+                    <h1 class="md:text-3xl text-2xl mb-5 text-[#474747] roboto tracking-wider">
+                      Expect more than coffee.
+                    </h1>
+                    <p class="mb-6 text-[18px] text-[#7d7d7d] tracking-wider lato">
+                      From the beginning, Starbucks set out to be a different kind of company.
+                      One that not only celebrated coffee but also connection. We’re a
+                      neighborhood gathering place, a part of your daily routine. Get to know us
+                      and you’ll see: we are so much more than what we brew. We call our
+                      employees partners because we are all partners in shared success. We make
+                      sure everything we do is through the lens of humanity—from our commitment
+                      to the highest-quality coffee in the world, to the way we engage with our
+                      customers and communities to do business responsibly.
+                    </p>
+                    <!-- our mission -->
+                    <h2 class="text-lg mb-8 text-[#757575] tracking-wide lato">OUR MISSION</h2>
+                    <p class="mb-8 text-[18px] text-[#7d7d7d] tracking-wider lato">
+                      With every cup, with every conversation, with every community - we nurture
+                      the limitless possibilities of human connection.
+                    </p>
+                    <!-- our values -->
+                    <h3 class="text-lg mb-8 text-[#757575] tracking-wide lato">OUR VALUES</h3>
+                    <p class="mb-6 text-[18px] text-[#7d7d7d] tracking-wide lato">
+                      When we show up at our best, we deliver performance through the lens of
+                      humanity.
+                    </p>
+                </div>
+                <!-- culture card -->
+                <culture-card></culture-card>
+                <!-- a culture of unclusion -->
+                <div class="mt-20">
+                    <img src="../../images/careers/staff1.webp" alt="" />
+                    <div class="flex flex-col gap-4 items-start ml-[26px] ">
+                      <h1 class="sodan font-semibold text-lg my-3">A culture of unclusion</h1>
+                      <p class="text-[#757575]">
+                        We're committed to upholding a culture where inclusion, diversity,
+                        equity and accessibility are valued and respected. Your entire
+                        experience—starting with your application—is designed to be the
+                        beginning of an inspirational journey, where you are treated warmly and
+                        with transparency, dignity and respect.
+                      </p>
+                      <p class="text-[#757575]">
+                        We actively hire individuals with disabilities and provide reasonable
+                        accommodations and assistive technologies that enable people to do their
+                        jobs. Starbucks is committed to offering reasonable accommodation for
+                        job applicants with disabilities. If you need assistance or an
+                        accommodation due to a disability, please contact us at
+                        <a class="text-[#1b7e58] underline hover:no-underline break-all" href=""
+                          >applicantaccommodation@starbucks.com</a
+                        >.
+                      </p>
+                      <p class="text-[#757575]">
+                        Our many Partner Networks (also referred to as employee resource groups)
+                        work to create an inclusive environment across Starbucks representing
+                        the broad spectrum of our partner backgrounds.
+                      </p>
+                    </div>
+                </div>
+                <!-- corporate and social responsibility -->
+                <div class="mt-12">
+                    <h1 class="mb-10 text-[#757575] text-lg tracking-wide">
+                      CORPORATE AND SOCIAL RESPONSIBILITY
+                    </h1>
+                    <!-- corporate card -->
+                    <corporate-content></corporate-content>
+                </div>
+                <!-- training and development -->
+                <div class="mt-20">
+                    <img src="../../images/careers/communicate.webp" alt="" class="w-full" />
+                    <div class="flex flex-col gap-2 items-start ml-[26px] text-wrap">
+                      <h1 class="sodan font-semibold text-lg my-2">Training and development</h1>
+                      <p class="text-[#757575]">
+                        At Starbucks, we are devoted to supporting, engaging and investing in
+                        the development of our partners. Our goal is to provide our valued
+                        partners with learning opportunities to develop skills, further careers
+                        and help partners achieve their personal and professional goals. As a
+                        partner (employee) who is curious, collaborative and a continuous
+                        learner, you’ll have limitless opportunities to make an impact and
+                        thrive, all while becoming your personal best and being recognized for
+                        it. We reward partners who achieve results, live our mission and values
+                        and help others succeed.
+                      </p>
+                    </div>
+                </div>
+                <!-- explore career paths -->
+                <div class="mt-10">
+                  <h1
+                    class="text-[#737373] text-[19px] font-bold sodosan text-xl tracking-wide mt-5">
+                    EXPLORE CAREER PATHS
+                  </h1>
+                </div>
+                <explore-career-content></explore-career-content>
+                <!-- employee spotlight header-->
+                <div class="mt-16">
+                    <h1 class="mb-8 text-[#757575] text-lg tracking-wide">
+                      EMPLOYEE SPOTLIGHT
+                    </h1>
+                </div>
+            <!-- employee spotlight content -->
+            <div class="max-w-[800px] mx-auto pl-4 xl:pr-0 flex md:flex-row flex-col items-start gap-10 my-5">
+                <div class="md:w-[50%] w-full h-full">
+                    <img
+                    class="w-full"
+                    src="../../images/careers/grandpa-red-shirt.webp"
+                    alt=""
+                    />
+                </div>
+                <div class="md:w-[50%] w-full h-full pr-16">
+                    <h1 class="sodosan font-bold text-[16px] tracking-wide my-1">
+                    Creating better accessibility
+                    </h1>
+                    <p class="text-[15.5px] text-[#757575]">
+                    “I work to foster deeper roots of accessibility in the Starbucks culture,
+                    to promote and accelerate the hiring of more people with disabilities and
+                    with the help of all the incredible partners, to make Starbucks the most
+                    inclusive company in the world. Starbucks is committed to including people
+                    with disabilities in the company and getting accommodations to perform my
+                    job is a given here. I use a screen reader, Braille typewriter and even
+                    have an accessible Cisco phone with key identifiers.”
+                    </p>
+                    <h2 class="sodan font-bold text-[18px] tracking-wide my-2">
+                    Mark, Human Resources
+                    </h2>
+                </div>
+            </div>
+            <!-- careers footer -->
+            <careers-footer-careers class="careers-footer-careers"></careers-footer-careers>
+            <!-- accordion footer -->
+            <footer-component dropdown="true"></footer-component>
+        </div>
+    </section>
+</body>
+<!-- scripts to link components -->
+<script src="./corporateContent.js"></script>
+<script src="./cultureCard.js"></script>
+<script src="./exploreCareer.js"></script>
+<!-- script to link navbar and accordion footer -->
+<script type="module" src="../../script/components/layout.js"></script>
+</html>

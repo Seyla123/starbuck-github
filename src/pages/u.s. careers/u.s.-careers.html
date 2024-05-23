@@ -1,0 +1,237 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Starbucks Careers: Starbucks Coffee Company</title>
+    <link rel="icon" href="https://www.starbucks.com/next_static/icons/favicon-16x16.png" />
+    <!-- Linking CSS files -->
+    <link rel="stylesheet" href="../../styles/output.css">
+    <link rel="stylesheet" href="../../styles/style.css">
+    <!-- Linking custom font -->
+    <link href="https://db.onlinewebfonts.com/c/d7e8a95865396cddca89b00080d2cba6?family=SoDo+Sans+SemiBold" rel="stylesheet">
+    <!-- Linking Font Awesome for icons -->
+    <script src="https://kit.fontawesome.com/cc39ea921b.js" crossorigin="anonymous"></script>
+    <!-- Preconnecting to Google Fonts -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <!-- Linking Google Fonts -->
+    <link href="https://fonts.googleapis.com/css2?family=Fira+Sans:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&family=Noto+Sans+JP:wght@100..900&display=swap" rel="stylesheet">
+    <!-- Linking Tailwind CSS -->
+    <script src="https://cdn.tailwindcss.com"></script>
+</head>
+<body>
+    <!-- navbar component -->
+    <navbar-component></navbar-component>
+    <!-- careers header -->
+    <career-header-component></career-header-component>
+    <!-- content -->
+    <section class="flex lg:flex-row flex-col">
+        <!-- left side contents -->
+        <div class="lg:w-[40%] flex justify-center">
+            <div class="lg:fixed relative lg:top-10 lg:w-[40%] w-full lg:h-[97vh] h-[80vh] ">
+                <img src="../../images/careers/cappucino.webp" class="w-full  h-full object-top object-cover" />
+                <!-- input bar -->
+                <div class="absolute p-12 w-full flex justify-center bottom-0 ">
+                    <div class="h-[30%] max-w-[440px]">
+                        <div
+                            class="w-full relative p-5  rounded-xl shadow-[rgba(50,_50,_105,_0.15)_0px_2px_5px_0px,_rgba(0,_0,_0,_0.05)_0px_1px_1px_0px] bg-white">
+                            <h1 class="mb-4 sodan tracking-wide md:text-[22px] text-[18px]">Be more than an employee. Be
+                                a partner.</h1>
+                            <div class="flex justify-center items-center relative w-full">
+                                <input id="whatYourNameInput" type="text"
+                                    class="relative w-full px-6 border rounded-xl transition-colors focus:outline-none border-gray-400 py-[10.5px] md:py-[14px]  bg-inherit " />
+                                <span id="whatYourName"
+                                    class="pointer-events-none absolute left-4 top-3 transition-all duration-100 text-black/90 text-lg sodan">What's
+                                    your name?</span>
+                            </div>
+                            <button class="mt-5 rounded-full border-solid border px-4 py-1 border-[#00754a] text-[#00754a] hover:bg-[#ebf3f1] font-semibold">
+                                Go!
+                            </button>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div class="lg:w-[60%] w-full">
+            <!-- search jobs section -->
+            <div class="max-w-[700px] mx-auto px-4 h-auto">
+                <div class="sodan py-8">
+                    <h1 class="md:text-3xl text-2xl  text-[#474747] roboto tracking-wider">
+                        Search jobs & Apply now
+                    </h1>
+                </div>
+                <div class="grid lg:grid-cols-2 grid-row gap-4">
+                    <div>
+                        <a href="https://apply.starbucks.com/careers?location=KH&pid=481056908597&domain=starbucks.com&sort_by=relevance"
+                            class="sodan text-[17px] text-[#00754a] underline hover:no-underline decoration-[#00754a]">
+                            Retail
+                        </a>
+                    </div>
+
+                    <div>
+                        <a href="https://starbucks.taleo.net/careersection/1000222/jobsearch.ftl?lang=en&LOCATION=200000194&CATEGORY=200000034&src=CWS-13040&ignoreSavedQuery=true&keyword=&searchCategory=retail_leadership"
+                            class="sodan text-[17px] text-[#00754a] underline hover:no-underline decoration-[#00754a]">
+                            Retail Leadership
+                        </a>
+                    </div>
+
+                    <div>
+                        <a href="https://starbucks.taleo.net/careersection/1000222/jobsearch.ftl?lang=en&LOCATION=200000194&CATEGORY=10560130812&src=CWS-13040&ignoreSavedQuery=true&keyword=&searchCategory=manufacturing"
+                            class="sodan text-[17px] text-[#00754a] underline hover:no-underline decoration-[#00754a]">
+                            Manufacturing and Distribution
+                        </a>
+                    </div>
+                    <div>
+                        <a href="https://starbucks.taleo.net/careersection/1000222/jobsearch.ftl?lang=en&LOCATION=200000194&src=CWS-13040&ignoreSavedQuery=true&keyword=&searchCategory=corporate"
+                            class="sodan text-[17px] text-[#00754a] underline hover:no-underline decoration-[#00754a]">
+                            Corporate
+                        </a>
+                    </div>
+                </div>
+                <!-- already a partner section -->
+                <div>
+                    <h1 class="text-[#737373] text-[18px] font-bold sodosan tracking-wide mt-5">
+                        Already a Partner? Apply below for:
+                    </h1>
+                    <div class="mt-7">
+                        <a href="https://id.starbucks.com/SecureAuth83/SecureAuth.aspx?SAMLRequest=fZJLT8MwEIT%2fSuS783ADpVZbqVAhIvGIaOHABbnOBiwSO3jtAv8eJ%2bVRkODo1czs57GnKNqm4wvvHvU1PHtAFxXLGbnPD1iaZ4cVZZN0RPN6PKabLNtQxrIqyyGtJwxIdAsWldEzwuKURAWih0KjE9qFUcpymh7QlK3TQ54zPhrHkzy7I9EybFFauMH56FyHPElUFQej3Xj5hLE0bYIgvQURyI5Ge4dYYPdKolNjJQzYM1KLBqFfXwpEtYWvSWmNM9I0x0pXSj%2fMiLeaG4EKuRYtIHeSrxYX5zzg881OhPxsvS5pebVak2iBCLbnPDEafQt2BXarJNxcn3%2bTo0O6VUhbofSvO5haYUKi17bRyIeq%2f2foPoDJfNqr%2bdCo3fP%2fbxefuGTey26L1UVg4gFwmuzl7cI7fhkCimVpGiXf%2bkJb4f7Oz%2bJsmKiK1oOUe40dSFUrqEJTTWNeTsITuVC%2fsz60n8x3W39%2br%2fk7&RelayState=urn%253AVISC1%253Asts"
+                            class="sodan text-[19px] text-[#00754a] underline hover:no-underline decoration-[#00754a]">
+                            Retail Hourly Opportunities
+                        </a>
+                        <p class="mb-8 text-[18px] text-[#7d7d7d] tracking-wide roboto">
+                            barista, shift supervisor and shift manager positions
+                        </p>
+                    </div>
+                    <div>
+                        <a href="https://starbucks.taleo.net/careersection/1000111/jobsearch.ftl?lang=en"
+                            class="sodan text-[19px] text-[#00754a] underline hover:no-underline decoration-[#00754a]">
+                            Manager and Non-Retail Opportunities
+                        </a>
+                        <p class="mb-8 text-[18px] text-[#7d7d7d] tracking-wide roboto">
+                            assistant store manager, store manager, district manager and other
+                            non-retail positions
+                        </p>
+                    </div>
+                </div>
+                <!-- join us section -->
+                <div>
+                    <h1 class="text-3xl mb-5 text-[#474747] roboto tracking-wider">
+                        Join us. Inspire with every cup.
+                    </h1>
+                    <p class="mb-8 text-[18px] text-[#7d7d7d] tracking-wide roboto">
+                        Being a Starbucks partner (employee) means becoming part of something
+                        bigger: inspiring positive change in the world while you grow in your
+                        career and in your community. It’s an opportunity to be your personal
+                        best.
+                    </p>
+                </div>
+                <!-- explore careers path -->
+                <div class="mt-10">
+                    <h1
+                      class="text-[#737373] text-[19px] font-bold sodosan text-xl tracking-wide mt-5">
+                      EXPLORE CAREER PATHS
+                    </h1>
+                </div>
+                <!-- explore career path section -->
+                <explore-career-content></explore-career-content>
+                <!-- search retail jobs section -->
+                <div class="max-w-[700px] mt-14 mx-auto pl-4 xl:pr-0 flex md:flex-row flex-col items-start gap-8">
+                    <div class="md:w-[50%] w-full h-full">
+                        <img src="../../images/careers/search-retail.webp" alt="" />
+                    </div>
+                    <div class="md:w-[50%] w-full h-full px-6">
+                        <h1 class="text-black text-[19px] font-bold sodosan tracking-wide mb-3">
+                            Search Retail Jobs by Location
+                        </h1>
+                        <p class="mb-3 text-[#757575] text-[16px]">
+                            Use our interactive map to search and apply at a Starbucks location near
+                            you.
+                        </p>
+                        <a href="https://apply.starbucks.com/careers?location=KH&pid=481056908597&domain=starbucks.com&sort_by=relevance">
+                            <button class="rounded-full hover:bg-[#ebf3f1] border-solid border px-4 py-1 font-semibold border-[#2b8b68] text-[#00754a]">
+                                Search jobs
+                            </button>
+                        </a>
+                    </div>
+                </div>
+                <!-- pathway section -->
+                <div  class="max-w-[700px] mx-auto pl-4 xl:pr-0 flex lg:flex-row md:flex-row-reverse flex-col-reverse items-start gap-8 mt-16">
+                    <div class="md:w-[50%] w-full h-full px-6">
+                        <h1 class="text-black text-[19px] font-bold sodosan tracking-wide mb-3">
+                            Culture and Values
+                        </h1>
+                        <p class="mb-3 text-[#757575] text-[16px]">
+                            Join a company with values you can be proud of. We aspire to conduct our
+                            business in ways that will continue to earn your trust, redefining the
+                            role and responsibility of a for-profit global company. Hiring veterans,
+                            ethical sourcing, and minimizing our environmental footprint are just a
+                            few ways that we strive to make a bigger impact.
+                        </p>
+                        <a href="./culture-and-values-page.html">
+                            <button
+                                class="rounded-full border-solid border hover:bg-[#ebf3f1] font-semibold px-4 py-1 border-[#2b8b68] text-[#00754a]">
+                                Learn more
+                            </button>
+                        </a>
+                    </div>
+                    <div class="md:w-[50%] w-full h-full">
+                        <img src="../../images/careers/culture-values.webp" alt="" />
+                    </div>
+                </div>
+                <!-- featured job section -->
+                <div class="mt-16">
+                    <h1 class="mb-9 text-[#757575] text-lg tracking-wide">FEATURED JOBS</h1>
+                </div>
+                <div class="xl:pr-0 flex md:flex-row flex-col items-start gap-4">
+                    <div class="md:w-[50%] w-full h-full">
+                        <img class="w-full" src="../../images/careers/technology.webp" alt="" />
+                    </div>
+                    <div class="md:w-[50%] w-full h-full px-6">
+                        <h1 class="sodosan font-bold text-[16px] tracking-wide mb-4">
+                            Technology
+                        </h1>
+                        <p class="text-[15.5px] mb-6 text-[#757575]">
+                            At Starbucks Technology, we power moments of connection for our
+                            customers and partners (employees). We build innovation that drives our
+                            core business. Proudly investing in our talent is a key pillar of
+                            building the future. Join our fast-growing team and start your journey
+                            with us.
+                        </p>
+                        <button
+                            class="rounded-full border-solid border hover:bg-[#ebf3f1] font-semibold px-4 py-1 border-[#2b8b68] text-[#00754a]">
+                            Learn more
+                        </button>
+                    </div>
+                </div>
+                <!-- we aspire section -->
+                <div class="md:m-12 m-7">
+                    <p class="text-[15.5px] mb-6 text-[#757575]">
+                        We aspire to conduct our business in ways that will continue to earn your
+                        trust, redefining the role and responsibility of a for-profit global
+                        company. Hiring veterans, ethical sourcing, and minimizing our
+                        environmental footprint are just a few ways that we strive to make a
+                        bigger impact.
+                    </p>
+                    <a href="https://www.instagram.com/starbucksjobs/">
+                        <button
+                            class="rounded-full border-solid border hover:bg-[#ebf3f1] font-semibold px-4 py-1 mt-3 border-[#2b8b68] text-[#00754a]">
+                            Follow @starbucksjobs on Instagram
+                        </button>
+                    </a>
+                </div>
+            </div>
+            <!-- careers footer -->
+            <career-footer-component></career-footer-component>
+            <!-- accordion footer -->
+            <footer-component dropdown="true"></footer-component>
+        </div>
+    </section>
+
+</body>
+<!-- script to link explore section from culture and value folder -->
+<script src="../culture-and-values/exploreCareer.js"></script>
+<script src="./u.s-careers.js"></script>
+<!-- script to link navbar and accordion footer -->
+<script type="module" src="../../script/components/layout.js"></script>
+</html>

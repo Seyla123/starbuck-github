@@ -1,0 +1,82 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Terms of Use: Starbucks Coffee Company</title>
+    <link rel="icon" href="https://www.starbucks.com/next_static/icons/favicon-16x16.png" />
+
+    <link rel="stylesheet" href="../../styles/output.css" />
+    <link rel="stylesheet" href="../../styles/style.css" />
+    <!-- font -->
+    <link href="https://db.onlinewebfonts.com/c/d7e8a95865396cddca89b00080d2cba6?family=SoDo+Sans+SemiBold"
+        rel="stylesheet" />
+    <!-- google icon -->
+    <script src="https://kit.fontawesome.com/cc39ea921b.js" crossorigin="anonymous"></script>
+    <!-- google font  -->
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+        href="https://fonts.googleapis.com/css2?family=Fira+Sans:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&family=Noto+Sans+JP:wght@100..900&display=swap"
+        rel="stylesheet" />
+    <!-- tailwind link -->
+    <script src="https://cdn.tailwindcss.com"></script>
+</head>
+
+<body>
+    <!--call navbar from component layout by class-->
+    <navbar-full-w-layout class="navbar-full-w-layout relative z-15"></navbar-full-w-layout>
+    <header class="p-6 2xl:px-0 w-full relative lg:hidden z-10 bg-[#ffffff] shadow-md text-[19px] sodan">Term of Use
+    </header>
+    <!-- body write here -->
+    <div class="flex">
+        <div
+            class="h-screen shadow-lg hidden lg:flex items-center justify-center w-[40%] top-0 z-0 fixed text-xl sodan">
+            Term of Use
+        </div>
+        <div class="bg-[#f9f9f9] w-full lg:w-[60%] right-0 absolute text-[#00000094]  py-8 flex flex-col">
+
+            <div id="content_privacy"
+                class="max-w-[800px] w-full mx-auto flex flex-col gap-4 px-8 text-sm md:text-base">
+                <strong class="">
+                    At Starbucks, we approach data and privacy as we approach everything
+                    we do: we put people first.
+                </strong>
+                <p class="">
+                    As part of our effort to protect your privacy and to comply with
+                    applicable privacy and data protection laws, we strive to consider
+                    all of our data governance practices through the lens of the
+                    recognized principles of data minimization, limited collection, and
+                    limited use, among other key areas addressed below. We do so to
+                    respect and maintain your trust. In other words, we believe that
+                    taking care of you includes taking care of your data and privacy.
+                    Grab a cup of coffee and learn more below.
+                </p>
+                <p class="">
+                    Please see the
+                    <a class="underline text-green-700" href="#">Consumer Health Data Privacy Notice for Washington and
+                        Nevada</a>
+                    for additional information of how we may process personal
+                    information that could be considered consumer health data.
+                </p>
+
+                <strong class="">Term of Use</strong>
+                <p class="">Last Revised: March 29, 2024</p>
+            </div>
+
+            <hr class="mt-8 mb-8" />
+
+
+            <footer-privacy-layout class="footer-full-w-careers-layout"></footer-privacy-layout>
+
+
+        </div>
+    </div>
+</body>
+
+<!-- script link component home page -->
+<script type="module" src="../../script/layout/layout.js"></script>
+<script src="../../script//privacy/privacy-policy.js"></script>
+
+</html>

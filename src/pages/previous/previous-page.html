@@ -1,0 +1,64 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Previous: Starbucks Coffee Company</title>
+    <link rel="icon" href="https://www.starbucks.com/next_static/icons/favicon-16x16.png" />
+    <!-- CSS -->
+    <link rel="stylesheet" href="../../styles/output.css">
+    <link rel="stylesheet" href="../../styles/style.css">
+    <!-- font -->
+    <link href="https://db.onlinewebfonts.com/c/d7e8a95865396cddca89b00080d2cba6?family=SoDo+Sans+SemiBold" rel="stylesheet">
+    <script src="https://kit.fontawesome.com/cc39ea921b.js" crossorigin="anonymous"></script>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Fira+Sans:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&family=Noto+Sans+JP:wght@100..900&display=swap" rel="stylesheet">
+    <!-- tailwind link -->
+    <script src="https://cdn.tailwindcss.com"></script>
+</head>
+<body>
+    <!--call navbar component-->
+    <navbar-component
+	isMenuPage = "true"
+	></navbar-component>
+
+<!-- header -->
+<sub-navbar-component page="previous"></sub-navbar-component>
+<!-- content -->
+<div class="p-6 md:ml-[78px] h-screen">
+
+    <h2 class="text-2xl sodan font-bold p-4 md:pl-0">Previous</h2>
+
+    <div class="max-w-80 flex flex-col gap-4">
+
+        <div>
+            <img src="../../images/menu/moon-phases.gif" alt="">
+        </div>
+        <p class="text-3xl sodan font-semibold">When history repeats itself</p>
+        <p class="text-[17px] text-gray-500">Previous orders will appear here to quickly order again.</p>
+        <div class="flex gap-4 sodan font-semibold text-sm ">
+            <a href="../../pages/log-in/log-in.html"
+                class="h-3 p-4 items-center flex justify-center rounded-full outline outline-1 hover:bg-gray-200 ">Sign
+                in</a>
+            <a href="../../pages/join-now/join-now.html"
+                class="h-3 p-4 items-center flex justify-center text-white  bg-black hover:bg-gray-600 rounded-full">Join
+                now</a>
+        </div>
+    </div>
+</div>
+
+<hr class="m-8">
+
+<!-- call footer from component layout by class--> 
+<div class="md:ml-[78px]">
+    <footer-component></footer-component>
+</div>
+<!-- call choose a store content -->
+<choose-store-component></choose-store-component>
+</body>
+
+<!-- script link component  -->
+<script type="module" src="../../script/components/layout.js"></script>
+
+</html>

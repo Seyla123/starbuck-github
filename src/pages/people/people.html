@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Building Supportive & Sustainable Communities: Starbucks Coffee Company</title>
+    <link rel="icon" href="https://www.starbucks.com/next_static/icons/favicon-16x16.png" />
+    <!-- Linking CSS files -->
+    <link rel="stylesheet" href="../../styles/output.css">
+    <link rel="stylesheet" href="../../styles/style.css">
+    <!-- Linking custom font -->
+    <link href="https://db.onlinewebfonts.com/c/d7e8a95865396cddca89b00080d2cba6?family=SoDo+Sans+SemiBold" rel="stylesheet">
+    <!-- Linking Font Awesome for icons -->
+    <script src="https://kit.fontawesome.com/cc39ea921b.js" crossorigin="anonymous"></script>
+    <!-- Preconnecting to Google Fonts -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <!-- Linking Google Fonts -->
+    <link href="https://fonts.googleapis.com/css2?family=Fira+Sans:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&family=Noto+Sans+JP:wght@100..900&display=swap" rel="stylesheet">
+    <!-- Linking Tailwind CSS -->
+    <script src="https://cdn.tailwindcss.com"></script>
+</head>
+<body>
+    <!--call navbar-->
+    <navbar-component></navbar-component>
+    <!-- main content -->
+    <section class="max-w-screen-2xl mx-auto">
+        <text-content-people
+            text="We're investing in the well-being of those we connect with, working hard toward a better future."
+            title="PUTTING PEOPLE FIRST"
+        ></text-content-people>
+        <content-people>
+        </content-people>
+        <text-content-people 
+            text="Follow the latest ways we're supporting and strengthening the people around us."
+            title="SEE WHAT'S NEXT"
+            button="true"
+        ></text-content-people>
+    </section>
+    <!-- footer--> 
+    <footer-component maxWidth="max-w-screen-2xl"></footer-component>
+</body>
+
+<!-- script-->
+<script type="module" src="./people.js"></script>
+<script type="module" src="./img-content.js"></script>
+<script type="module" src="../../script/components/layout.js"></script>
+</html>

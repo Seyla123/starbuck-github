@@ -1,0 +1,152 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Account sign in: Starbucks Coffee Company</title>
+    <link rel="icon" href="https://www.starbucks.com/next_static/icons/favicon-16x16.png" />
+    <link rel="stylesheet" href="../../styles/output.css">
+    <link rel="stylesheet" href="../../styles/style.css">
+    <link rel="stylesheet" href="../../styles/wave.css">
+    <!-- font -->
+    <link href="https://db.onlinewebfonts.com/c/d7e8a95865396cddca89b00080d2cba6?family=SoDo+Sans+SemiBold" rel="stylesheet">
+    <!-- google font  -->
+    <script src="https://kit.fontawesome.com/cc39ea921b.js" crossorigin="anonymous"></script>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Fira+Sans:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&family=Noto+Sans+JP:wght@100..900&display=swap" rel="stylesheet">
+    <!-- tailwind link -->
+    <script src="https://cdn.tailwindcss.com"></script>
+</head>
+<body>
+<!--navbar-->
+<navbar-component isMenuHidden="true"></navbar-component>
+
+<!-- content-->
+<section class="w-full max-w-screen-2xl mx-auto">
+    <!-- create an account title -->
+    <div class="md:text-center max-w-[495px] mx-auto px-4 md:max-w-[560px]">
+        <h1 class="font-bold text-2xl md:text-[29px] py-7 md:py-14 tracking-[0.5px]">Create an account</h1>
+        <h1 class="text-[13.5px] font-extrabold tracking-[1px] text-[#00000094] pb-4 hidden md:block">STARBUCKS® REWARDS</h1>
+        <h1 class="text-[12.5px] font-normal text-wrap text-[#00000094] tracking-[0.5px] hind leading-5 md:text-[13.9px]">Join Starbucks Rewards to earn Stars for free food and drinks, any way you pay. Get access to mobile ordering, a birthday Reward, and <a href="../../pages/reward/reward.html" class="underline hover:no-underline">more</a>.</h1>
+    </div>
+    <!-- box content -->
+    <div class="md:p-8 px-4 pb-1 rounded-xl md:border md:border-[0.1px] md:border-gray-100 md:shadow-lg max-w-[600px] w-full mx-auto mt-8 md:mt-12 mb-16">
+        <div class="max-w-[495px] md:max-w-[410px] mx-auto">
+            <!-- indicates required field -->
+            <div class="md:pt-5">
+                <h1 class="text-sm md:text-base"><span class="text-[#00754a]">*</span> indicates required field</h1>
+                <h1 class="pt-3 md:pt-7 font-semibold text-[18.5px] tracking-[0.4px]">Personal Information</h1>
+            </div>
+            <input-field-component 
+            labelText="First Name" 
+            labelReq="Enter your first name.">
+            </input-field-component>
+            <input-field-component 
+            labelText="Last Name" 
+            labelReq="Enter your last name.">
+            </input-field-component>
+
+            
+            <div class="pt-9 md:pt-5">
+                <h1 class="pt-4 md:pt-7 font-semibold md:text-[18.5px] tracking-[0.4px]">Account Security</h1>
+            </div>
+            <input-field-component 
+            labelText="Email Address" 
+            labelReq="Please enter your email address.">
+            </input-field-component>
+            
+            <!-- caption for box -->
+            <h1 class="p-2 px-4 md:text-[15.7px] text-[15px] tracking-[0.4px]">This will be your username</h1>
+
+            <!-- box password -->
+            <input-field-component 
+            labelText="Password" 
+            labelReq="Enter an password."
+            customType="password">
+            </input-field-component>
+            <!-- caption for box -->
+            <h1 class="mb-7 p-2 px-4 md:text-[15.8px] text-[14.5px] tracking-[0.3px] leading-[21px] md:leading-[22px]">Create a password 8 to 25 characters long that includes at least 1 uppercase and 1 lowercase letter, 1 number and 1 special character like an exclamation point or asterisk.</h1>
+            <!-- drop down tap-->
+            <div class="transition">
+                <div class="according-header cursor-point transition flex space-x-5 items-center h-12 ">
+                    <h1 href="" class=" text-[#315f4e] font-bold underline hover:no-underline md:text-[17px] text-[15px]" id="drop-letter">Already have a Starbucks gift card?</h1>
+                    <img src="../../images/join-now/down.png" class="size-4 rotate-0 duration-300" id="chevron-button" alt="">
+                </div>
+                <!-- (drop down) -->
+                <div class="according-content overflow-hidden max-h-0 duration-300">
+                    <h1 class="text-[15px]">Add your gift card to earn Stars when you pay and order ahead.</h1>
+                    <!-- (drop down) box 1 -->
+                    <input-field-component 
+                    labelText="Card number (16 digits)" 
+                    labelReq="A valid Starbucks card number has 16 digits.">
+                    </input-field-component>
+                    <!-- caption -->
+                    <h1 class="pl-16 mt-1 text-[15px]">No spaces or dashes</h1>
+                    <!-- (drop dow) box 2 -->
+                    <input-field-component 
+                    labelText="Security code" 
+                    labelReq="A valid security code has 8 digits.">
+                    </input-field-component>
+
+                    <!-- caption -->
+                    <h1 class="pl-16 mt-1 text-[15px]">Scratch to reveal 8-digit code</h1>
+                </div>
+            </div>
+            <!-- tile: collect more stars & earn reward -->
+            <div class="md:w-[350px]">
+                <h1 class="md:text-[14px] text-[13px] font-extrabold tracking-[1.5px] text-[#00000094] pb-4 sodan mt-10">COLLECT MORE STARS & EARN REWARDS</h1>
+                <h1 class="md:text-[16px] text-[14px] tracking-[0.2px] md:leading-[22px] md:text-left">Email is a great way to know about offers and what's new from Starbucks.</h1>
+            </div>
+            <!-- tik box -->
+            <div class="flex my-8">
+                <div class="W-1">
+                    <input type="checkbox" class="size-6 accent-[#00754a]">
+                </div>
+                <div class="px-3">
+                    <h1 class="tracking-[0.5px] mb-4 md:text-base text-sm">Yes, I'd like email from Starbucks</h1>
+                    <h1 class="tracking-[0.5px] text-[#00000094] md:text-base text-sm">Know about initiatives, announcements and product offers.</h1>
+                </div>
+            </div>
+            <!-- tik box -->
+            <h1 class="text-[14px] font-extrabold tracking-[1px] text-[#00000094] sodan mt-12">TERMS OF USE</h1>
+            <div class="flex my-8">
+                <div class="W-1">
+                    <input type="checkbox" class="size-6 accent-[#00754a]">
+                </div>
+                <div class="pl-4 pr-6 flex flex-col">
+                    <p class="flex gap-1">
+                        <span class="text-[#00754a]">*</span>
+                        I agree to the
+                        <a href="../../pages/privacy/term.html" class="underline hover:no-underline text-[#00754a]">Starbucks® Rewards Terms </a>
+                            <img src="../../images/join-now/open-in-new.png" class="size-[15px] mt-[6px]" alt="">
+                    </p>
+                    <p class="flex gap-1">
+                        and the
+                        <a href="../../pages/privacy/term.html" class="underline hover:no-underline text-[#00754a]">Starbucks Card Terms </a>
+                            <img src="../../images/join-now/open-in-new.png" class="size-[15px] mt-[6px]" alt="">
+                        and have
+                    </p>
+                    <p class="flex gap-1">
+                        read the
+                        <a href="../../pages/privacy/privacy-policy.html" class="underline hover:no-underline text-[#00754a]">Starbucks® Rewards Terms </a>
+                            <img src="../../images/join-now/open-in-new.png" class="size-[15px] mt-[6px]" alt="">
+                    </p>
+                </div>
+            </div>
+            <!-- button: create account -->
+            <div class="flex justify-end my-6 mt-12">
+                <a href="../../pages/home/home.html" class=" bg-[#00754a] px-6 py-4 rounded-full text-white shadow-lg text-lg font-medium tracking-[1px]">Create account</a>
+            </div>
+        </div>  
+    </div>
+</section>
+<!-- call footer --> 
+<footer-component></footer-component>
+</body>
+<!-- script -->
+<script src="./index.js"></script>
+<script src="../../script/components/inputTextField.js"></script>
+<script type="module" src="../../script/components/layout.js"></script>
+
+</html>

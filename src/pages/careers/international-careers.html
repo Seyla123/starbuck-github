@@ -1,0 +1,85 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>International Careers: Starbucks Coffee Company</title>
+    <link rel="icon" href="https://www.starbucks.com/next_static/icons/favicon-16x16.png" />
+
+    <link rel="stylesheet" href="../../styles/output.css">
+    <link rel="stylesheet" href="../../styles/style.css">
+   <!-- google font  -->
+   <link rel="preconnect" href="https://fonts.googleapis.com">
+   <link
+       href="https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;0,900;1,100;1,300;1,400;1,500;1,700;1,900&display=swap"
+       rel="stylesheet">
+   <link href="https://db.onlinewebfonts.com/c/d7e8a95865396cddca89b00080d2cba6?family=SoDo+Sans+SemiBold"
+       rel="stylesheet">
+   <link
+       href="https://fonts.googleapis.com/css2?family=Lato:ital,wght@0,100;0,300;0,400;0,700;0,900;1,100;1,300;1,400;1,700;1,900&display=swap"
+       rel="stylesheet">
+   
+   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+   <link
+       href="https://fonts.googleapis.com/css2?family=Fira+Sans:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&family=Noto+Sans+JP:wght@100..900&display=swap"
+       rel="stylesheet">
+           <!-- font fontawesome -->
+    <script src="https://kit.fontawesome.com/cc39ea921b.js" crossorigin="anonymous"></script>
+    <script src="https://cdn.tailwindcss.com"></script>
+</head>
+
+<body>
+    <!-- navbar component -->
+    <navbar-component></navbar-component>
+    <!-- careers header -->
+    <careers-head class="careers-head-careers"></careers-head>
+
+    <section class="flex lg:flex-row flex-col">
+        <!-- left side contents -->
+        <div class="lg:w-[40%] w-[60%] hidden lg:flex lg:flex-col-reverse">
+            <div class="lg:fixed relative lg:top-10 lg:w-[40%] w-full lg:h-[99vh] h-[80vh] flex items-end">
+                <div class="bg-white flex justify-start pl-32 items-center w-full h-full shadow-[0_3px_10px_rgb(0,0,0,0.2)] ">
+                    <h1 class="sodan text-[22px] text-slate-900 tracking-wider" >International Careers</h1>
+                </div>
+            </div>
+        </div>
+        <div class="flex lg:hidden ">
+            <div class="bg-white p-7 flex justify-start items-start w-full h-full shadow-[0_3px_10px_rgb(0,0,0,0.2)] ">
+                <h1 class="sodan text-xl text-slate-900 tracking-wider" >International Careers</h1>
+            </div>
+        </div>
+
+        <div class="lg:w-[60%] w-full">
+            <!-- right side contents -->
+            <div class="max-w-[700px] mx-auto px-4 h-auto">
+                <div class="py-8 sodan">
+                    <h1 class="md:text-3xl text-2xl mb-5 text-[#474747] roboto tracking-wider">
+                        We’re all over the world. Join one of our support center offices around the globe.
+                    </h1>
+                    <p class="text-[#757575] mb-5 sodan text-[17px]">Starbucks is one of the most widely recognized brands in the world. But no matter where you go in the world, we work very hard to deliver on our Starbucks mission and create genuine moments of connection with our customers. International positions at global Support Centers help our markets deliver a consistently uplifting experience for our customers and partners. We know that no two countries are the same—and so we encourage our partners to immerse themselves in the local culture and allow the flavors and designs of their region to shine through in their work.</p>
+                    <p class="text-[#757575] sodan text-[17px]">Starbucks has Support Centers all around the globe, including Seattle, Toronto, London, Paris, Munich, Santiago, Rio de Janeiro, Puerto Rico, Shanghai, Hong Kong, Singapore, Bangkok, and Sydney.</p>
+                </div>
+                
+                <!-- take a peek -->
+                <div>
+                    <h1 class="text-[#737373] text-[18px] font-bold sodosan tracking-wide mt-5">TAKE A PEEK AT OUR INTERNATIONAL CAREER CENTER SITES:</h1>
+                </div>
+            
+                <flag-content></flag-content>
+            </div>
+            <!-- careers footer -->
+            <careers-footer-careers class="careers-footer-careers"></careers-footer-careers>
+            <!-- accordion footer -->
+            <footer-component dropdown="true"></footer-component>
+        </div>
+    </section>
+
+</body>
+<!-- script to links contents -->
+<script src="../../script/careers/careers-head.js"></script>
+<script src="../../script/careers/careers-footer.js"></script>
+<!-- script to link navbar and accordion footer -->
+<script type="module" src="../../script/components/layout.js"></script>
+<script src="../../script/careers/flagContent.js"></script>
+</html>

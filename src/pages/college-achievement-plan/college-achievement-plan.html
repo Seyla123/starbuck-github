@@ -1,0 +1,159 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Education: Starbucks Coffee Company</title>
+  <link rel="icon" href="https://www.starbucks.com/next_static/icons/favicon-16x16.png" />
+  <!-- Linking CSS files -->
+  <link rel="stylesheet" href="../../styles/output.css">
+  <link rel="stylesheet" href="../../styles/style.css">
+  <!-- Linking custom font -->
+  <link href="https://db.onlinewebfonts.com/c/d7e8a95865396cddca89b00080d2cba6?family=SoDo+Sans+SemiBold" rel="stylesheet">
+  <!-- Linking Font Awesome for icons -->
+  <script src="https://kit.fontawesome.com/cc39ea921b.js" crossorigin="anonymous"></script>
+  <!-- Preconnecting to Google Fonts -->
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <!-- Linking Google Fonts -->
+  <link href="https://fonts.googleapis.com/css2?family=Fira+Sans:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&family=Noto+Sans+JP:wght@100..900&display=swap" rel="stylesheet">
+  <!-- Linking Tailwind CSS -->
+  <script src="https://cdn.tailwindcss.com"></script>
+</head>
+<body>
+  <!-- navbar component -->
+  <navbar-component></navbar-component>
+  <!-- careers header -->
+  <career-header-component></career-header-component>
+   <!-- contents -->
+  <section class="flex lg:flex-row flex-col">
+    <!-- left side contents -->
+    <div class="lg:w-[40%] flex">
+      <div class="lg:fixed relative lg:top-10 lg:w-[40%] w-full lg:h-[97vh] h-[80vh] flex items-end"><img src="../../images/careers/college.webp" class="w-full h-full object-cover"/>
+        <div class="absolute bottom-0 h-[50%] w-full bg-gradient-to-t from-black sodan text-white p-20">
+          <div class="absolute bottom-10 flex flex-col gap-4 items-start">
+              <h1 class="sodosan font-bold text-[19px] gap-1 tracking-wide">STARBUCKS COLLEGE ACHIEVEMENT PLAN
+              </h1>
+              <h2 class="text-[20px]">Creating your path
+              </h2>
+              <button
+                  class="rounded-full border-solid border border-white text items-center flex gap-1 px-4 py-1">
+                  <span
+                  ><img
+                      class="w-5"
+                      src="../../images/careers/icon/play-button (1).svg"
+                      alt=""
+                  /></span>
+                  Watch video
+              </button>
+          </div>
+        </div>
+      </div>
+    </div>
+    <div class="lg:w-[60%] w-full">
+        <div class="max-w-[700px] mx-auto px-4 h-auto">
+            <!-- future leader section -->
+            <div class="py-8 sodan">
+                <h1 class="md:text-3xl text-2xl mb-5 text-[#474747] roboto tracking-wider">
+                  Future leaders start here
+                </h1>
+                <p class="mb-3 md:text-[18px] text-[16.5px] text-[#7d7d7d] tracking-wider lato">
+                  We’re committed to the success of our partners (employees). Every eligible
+                  U.S. partner working part- or full-time receives 100% tuition coverage for
+                  a first-time bachelor’s degree through Arizona State University’s online
+                  program. Choose from over 140+ diverse undergraduate degree programs, and
+                  have our support every step of the way.
+                </p>
+            </div>
+            <!-- current partner section -->
+            <div
+                class="max-w-[900px] mx-auto pl-4 xl:pr-0 flex md:flex-row flex-col items-start gap-10 mt-5">
+                <div class="md:w-[60%] w-full h-full">
+                    <img src="../../images/careers/man-starbuck.webp" alt="" />
+                </div>
+                <div class="md:w-[60%] lg:px-10">
+                    <h1 class="mb-2 text-lg sodan font-semibold">
+                        Are you a current partner?
+                    </h1>
+                    <p class="text-[#757575] mb-2">
+                        Take the next step toward your Arizona State University bachelor's
+                        degree with the Starbucks College Achievement Plan.
+                    </p>
+                    <a href="https://starbucks.asu.edu/?_ga=2.6351154.1063114178.1714630620-1801824687.1713429743">
+                        <button
+                        class="border px-4 py-1 hover:bg-[#ebf3f1] rounded-full border-solid border-[#00754a] font-semibold text-[#00754a] sodan mt-4 mb-5">
+                        Get started
+                        </button>
+                    </a>
+                </div>
+            </div>
+            <!-- take the first step header -->
+            <div class="mt-14">
+                <h1 class="text-[#737373] font-semibold sodosan text-xl tracking-wide">
+                  TAKE THE FIRST STEP
+                </h1>
+            </div>
+            <!-- take the first step content -->
+            <first-step-content></first-step-content>
+            <!-- how it works header -->
+            <div class="my-5 mt-10">
+                <h1 class="text-[#737373] font-semibold sodosan text-xl tracking-wide">
+                  HOW IT WORKS
+                </h1>
+            </div>
+            <!-- how it works content -->
+            <how-it-works-content></how-it-works-content>
+            <!-- honoring section  -->
+            <div class="max-w-[800px] mx-auto pl-4 xl:pr-0 flex lg:flex-row md:flex-row-reverse flex-col-reverse items-start gap-10 mt-5 mb-5">
+                <div class="md:w-[50%] w-full h-full px-10">
+                <h1 class="sodan font-semibold text-lg">Honoring our Servicemembers</h1>
+                <p class="mt-3 text-[#737373] sodan tracking-wide text-[15px]">
+                    To show our gratitude to our veteran partners for their service, they
+                    can extend an additional Starbucks College Achievement Plan benefit to a
+                    qualifying family member of their choice. The participating family
+                    member will receive all of the same benefits as our partners in the
+                    program, with access to over 100 different degree programs.
+                </p>
+                </div>
+                <div class="md:w-[50%] w-full h-full">
+                <img class="w-full" src="../../images/careers/beard-man.webp" alt="" />
+                </div>
+            </div>
+            <!-- pathway section -->
+            <div class="max-w-[800px] mx-auto pl-4 xl:pr-0 flex lg:flex-row md:flex-row flex-col items-start gap-10 mt-20">
+                <div class="md:w-[50%] w-full h-full">
+                  <img class="w-full" src="../../images/careers/asu.webp" alt="" />
+                </div>
+                <div class="md:w-[50%] w-full h-full px-10">
+                  <h1 class="sodan font-semibold text-lg">Pathway to Admission</h1>
+                  <p class="mt-3 mb-10 text-[#737373] sodan tracking-wide text-[15px]">
+                    Pathway to Admission is an expansion of our Starbucks College
+                    Achievement Plan benefit. Through this program, Starbucks and Arizona
+                    State University provide an admissions pathway for eligible partners
+                    (employees) who do not initially qualify for admission. Through Pathway
+                    to Admission, eligible partners (employees) can take up to 10
+                    college-level courses to earn their admission into the university, with
+                    credit conversion costs fully covered.
+                  </p>
+                </div>
+            </div>
+            <!-- frequently asked questions section -->
+            <frequently-asked-content></frequently-asked-content>
+            <hr class="mt-2 mb-8">
+        </div>
+      <!-- careers footer -->
+      <career-footer-component></career-footer-component>
+      <!-- accordion footer -->
+      <footer-component dropdown="true"></footer-component>
+    </div>
+  </section>
+</body>
+<script src="./takeTheFirstStep.js"></script>
+<script src="./howItWorks.js"></script>
+<script src="./frequentlyAsked.js"></script>
+<!-- script to link navbar and accordion footer -->
+<script type="module" src="../../script/components/layout.js"></script>
+
+
+
+</html>

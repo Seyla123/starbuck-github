@@ -1,0 +1,80 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Starbucks Delivers: Starbucks Coffee Company</title>
+    <link rel="icon" href="https://www.starbucks.com/next_static/icons/favicon-16x16.png" />
+
+    <link rel="stylesheet" href="../../styles/output.css">
+    <link rel="stylesheet" href="../../styles/style.css">
+    <!-- font -->
+        <script src="https://kit.fontawesome.com/cc39ea921b.js" crossorigin="anonymous"></script>
+    <link href="https://db.onlinewebfonts.com/c/d7e8a95865396cddca89b00080d2cba6?family=SoDo+Sans+SemiBold" rel="stylesheet">
+    <!-- google font  -->
+    <script src="https://kit.fontawesome.com/cc39ea921b.js" crossorigin="anonymous"></script>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Fira+Sans:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&family=Noto+Sans+JP:wght@100..900&display=swap" rel="stylesheet">
+    <!-- tailwind link -->
+    <script src="https://cdn.tailwindcss.com"></script>
+</head>
+<body>
+<!--call navbar component-->
+<navbar-component maxWidth="max-w-screen-2xl" ></navbar-component>
+
+<section class="w-full max-w-screen-2xl mx-auto">
+    <div class="flex justify-center items-center py-8 ">
+        <img alt="Starbucks® Delivers" class="block"
+            src="https://content-prod-live.cert.starbucks.com/binary/v2/asset/137-82604.png">
+    </div>
+
+    <div class="py-5 flex items-center justify-center text-center">
+        <h1 class=" mb4 md font-semibold text-xl text-green-800 ">Today deserves delivery</h1>
+    </div>
+
+
+    <div class="py-10 flex flex-col-reverse md:flex-row ">
+        
+        <div class="bg-green-800 text-center w-full md:w-1/2 flex justify-center items-center">
+            <div class="max-w-md mx-auto md:max-w-2xl text-white">
+                <div class="p-6 items-center">
+                    <div class="text-2xl md:text-4xl font-bold">Your coffee is on its way</div>
+                    <p class="py-5 mt-2 text-base md:text-xl">Order Starbucks® delivery on DoorDash or Uber Eats and let your favorites come to you.</p>
+                </div>
+            </div>
+        </div>
+        
+        <div class="w-full md:w-1/2">
+            <img src="../../images/order/delivery-image.jpeg" class="block w-full">
+        </div>
+        
+    </div>
+
+
+    <delivery-card></delivery-card>
+
+    <question-content> </question-content>
+    <div class="max-w-md mx-auto md:max-w-2xl">
+        <div class="p-3 items-center py-4">
+            <p class="py-2 mt-2  text-[14px] text-center"> Product image may vary from delivered product.
+                Menu limited. Restricted delivery area. Available in participating locations only. Fees subject to
+                change. Prices for Starbucks® items purchased through Uber Eats or DoorDash may be higher than
+                posted in stores or as marked. Your delivery order may be limited in any one transaction to one
+                hundred dollars ($100) before taxes, tip, and fees. We may adjust this limit at any time at our
+                discretion. See each delivery app for details.</p>
+        </div>
+    </div>
+</section>
+<!-- call footer from component layout by class--> 
+<br>
+<hr>
+<footer-component maxWidth = "max-w-screen-2xl" ></footer-component>
+</body>
+<!-- script link component home page -->
+<script src="./deliveryCard.js"></script>
+<script src="./questionContent.js"></script>
+<script type="module" src="../../script/components/layout.js"></script>
+
+
+</html>

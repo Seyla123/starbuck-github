@@ -1,0 +1,77 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Starbucks Careers: Starbucks Coffee Company</title>
+    <link rel="icon" href="https://www.starbucks.com/next_static/icons/favicon-16x16.png" />
+
+    <link rel="stylesheet" href="../../styles/output.css">
+    <link rel="stylesheet" href="../../styles/style.css">
+    <!-- font fontawesome -->
+    <script src="https://kit.fontawesome.com/cc39ea921b.js" crossorigin="anonymous"></script>
+    <!-- google font  -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link
+        href="https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;0,900;1,100;1,300;1,400;1,500;1,700;1,900&display=swap"
+        rel="stylesheet">
+    <link href="https://db.onlinewebfonts.com/c/d7e8a95865396cddca89b00080d2cba6?family=SoDo+Sans+SemiBold"
+        rel="stylesheet">
+    <link
+        href="https://fonts.googleapis.com/css2?family=Lato:ital,wght@0,100;0,300;0,400;0,700;0,900;1,100;1,300;1,400;1,700;1,900&display=swap"
+        rel="stylesheet">
+    
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link
+        href="https://fonts.googleapis.com/css2?family=Fira+Sans:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&family=Noto+Sans+JP:wght@100..900&display=swap"
+        rel="stylesheet">
+
+    <script src="https://cdn.tailwindcss.com"></script>
+</head>
+
+<body>
+    <!-- navbar component -->
+    <navbar-component></navbar-component>
+    <!-- careers header -->
+    <careers-head class="careers-head-careers"></careers-head>
+
+    <section class="flex lg:flex-row flex-col">
+        <!-- left side contents -->
+        <div class="lg:w-[40%] flex justify-center">
+            <div class="lg:fixed relative lg:top-10 lg:w-[40%] w-full lg:h-[97vh] h-[80vh] ">
+                <img src="../../images/careers/cappucino.webp" class="w-full  h-full object-top object-cover" />
+                <div class="absolute p-12 w-full flex justify-center bottom-0 ">
+                    <div class="h-[30%] max-w-[440px]">
+                        <div class="w-full relative p-5  rounded-xl shadow-[rgba(50,_50,_105,_0.15)_0px_2px_5px_0px,_rgba(0,_0,_0,_0.05)_0px_1px_1px_0px] bg-white">
+                            <h1 class="mb-4 sodan tracking-wide md:text-[22px] text-[18px]">Be more than an employee. Be a partner.</h1>
+                            <div class="flex justify-center items-center relative w-full">
+                                <input id="whatYourNameInput" type="text"
+                                    class="relative w-full px-6 border rounded-xl transition-colors focus:outline-none border-gray-400 py-[10.5px] md:py-[14px]  bg-inherit " />
+                                <span id="whatYourName"  class="pointer-events-none absolute left-4 top-3 transition-all duration-100 text-black/90 text-lg sodan">What's your name?</span>
+                            </div>
+                            <button class="mt-5 rounded-full border-solid border px-4 py-1 border-[#00754a] text-[#00754a] hover:bg-[#ebf3f1] font-semibold">Go!</button>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <div class="lg:w-[60%] w-full">
+            <!-- right side contents -->
+            <us-careers class="us-careers"></us-careers>
+            <!-- careers footer -->
+            <careers-footer-careers class="careers-footer-careers"></careers-footer-careers>
+            <!-- accordion footer -->
+            <footer-component dropdown="true"></footer-component>
+        </div>
+    </section>
+
+</body>
+
+<script src="../../script/careers/u.s-careers.js"></script>
+<script src="../../script/careers/careers-head.js"></script>
+<script src="../../script/careers/careers-footer.js"></script>
+<!-- script to link navbar and accordion footer -->
+<script type="module" src="../../script/components/layout.js"></script>
+</html>

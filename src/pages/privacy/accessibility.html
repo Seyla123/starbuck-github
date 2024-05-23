@@ -1,0 +1,59 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Accessibility: Starbucks Coffee Company</title>
+    <link rel="icon" href="https://www.starbucks.com/next_static/icons/favicon-16x16.png" />
+
+    <link rel="stylesheet" href="../../styles/output.css" />
+    <link rel="stylesheet" href="../../styles/style.css" />
+    <!-- font -->
+    <link href="https://db.onlinewebfonts.com/c/d7e8a95865396cddca89b00080d2cba6?family=SoDo+Sans+SemiBold"
+        rel="stylesheet" />
+        <!-- google icon -->
+    <script src="https://kit.fontawesome.com/cc39ea921b.js" crossorigin="anonymous"></script>
+    <!-- google font  -->
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+        href="https://fonts.googleapis.com/css2?family=Fira+Sans:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&family=Noto+Sans+JP:wght@100..900&display=swap"
+        rel="stylesheet" />
+    <!-- tailwind link -->
+    <script src="https://cdn.tailwindcss.com"></script>
+</head>
+
+<body>
+    <!--call navbar from component layout by class-->
+    <navbar-layout class="navbar-layout"></navbar-layout>
+    <div class="max-w-[800px] w-full mx-auto flex flex-col space-y-12 px-6 py-8 text-base md:text-[19px] sodan">
+        <h1 class="text-2xl md:text-4xl font-semibold">Accessibility</h1>
+        <h2 class="text-[22px] md:text-2xl font-semibold">Digital Accessibility Statement</h2>
+        <p>Starbucks mission is “With every cup, with every conversation, with every community – we nurture the limitless possibilities for human connection.” We are working to ensure that all Starbucks digital properties are accessible for all partners and customers. Starbucks efforts to improve digital usability and accessibility are guided by recommendations established by the World Wide Web Consortium (W3C), which includes the currently approved Web Content Accessibility Guidelines (WCAG) Levels A and AA. We are also firmly dedicated to complying with the Americans with Disabilities Act (ADA) 2010, U.S. Section 508 of the Rehabilitation Act of 1973 (or “Section 508” 36 CFR 1194), the Accessible Canada Act (ACA), and the Accessibility for Ontarians with Disabilities Act (AODA).</p>
+        <p>Our efforts are ongoing as we continue to develop our digital accessibility program, which includes coordination with internal and external accessibility partners, as well as designing, developing, and testing Starbucks digital properties for accessibility. </p>
+        <h2 class="text-[22px] md:text-2xl font-semibold">Contact</h2>
+        <div class="space-y-2">
+            <span>If you:</span>
+        <ul class="list-disc space-y-4 ml-8">
+            <li>Would like more information about Starbucks digital accessibility efforts; </li>
+            <li>Have other accessibility questions or feedback; or</li>
+            <li>Are a customer with a disability, or an individual assisting someone with a disability, that is experiencing issues accessing any Starbucks digital channel,</li>
+        </ul>
+        </div>
+        <span>Please select the following link to submit your question or issue: </span>
+        <a href="#" class="underline">Accessibility contact form</a>
+        <span>For all other feedback and inquiries, please visit our customer service page.</span>
+        <h2 class="text-[22px] md:text-2xl font-semibold">Disclaimer</h2>
+        <p>Please be aware that our efforts to maintain accessibility and usability are ongoing. While we strive to make the Starbucks website and mobile apps as accessible as possible some issues may be encountered by different assistive technology as the range of assistive technology is wide and varied. We appreciate your understanding.</p>
+        <span>Last updated: [2023-11-27]</span>
+    </div>
+    <!-- call footer from component layout by class--> 
+<footer-layout class="footer-layout"></footer-layout>
+</body>
+
+<!-- script link component home page -->
+<script type="module" src="../../script/layout/layout.js"></script>
+<script src="../../script//privacy/privacy-policy.js"></script>
+
+</html>

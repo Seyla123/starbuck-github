@@ -1,0 +1,334 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Store Locator: Starbucks Coffee Company</title>
+    <link
+      rel="icon"
+      href="https://www.starbucks.com/next_static/icons/favicon-16x16.png" />
+
+    <!-- css link -->
+    <link rel="stylesheet" href="../../styles/output.css" />
+    <link rel="stylesheet" href="../../styles/style.css" />
+    <!-- font -->
+    <link
+      href="https://db.onlinewebfonts.com/c/d7e8a95865396cddca89b00080d2cba6?family=SoDo+Sans+SemiBold"
+      rel="stylesheet" />
+    <!-- google font  -->
+    <script
+      src="https://kit.fontawesome.com/cc39ea921b.js"
+      crossorigin="anonymous"></script>
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Fira+Sans:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&family=Noto+Sans+JP:wght@100..900&display=swap"
+      rel="stylesheet" />
+    <!-- tailwind link -->
+    <script src="https://cdn.tailwindcss.com"></script>
+    <link
+      rel="shortcut icon"
+      type="x-icon"
+      href="../../images/reward/Starbucks_Corporation_Logo_2011.svg.webp" />
+  </head>
+  <body>
+    <!-- navbar component -->
+    <navbar-component></navbar-component>
+    <!-- main section -->
+    <section>
+      <!-- search bar -->
+      <div
+        class="w-full h-[92vh] flex flex-col-reverse lg:flex-row justify-between">
+        <!-- find a store -->
+        <div class="overflow-y-hidden relative lg:py-6 py-0 lg:w-[40%]">
+          <div
+            class="relative h-screen overflow-y-auto w-full flex flex-col gap-1">
+            <!-- search bar -->
+            <div class="sticky top-0 pb-4 px-8 z-[1] bg-white">
+              <div class="lg:flex hidden">
+                <div
+                  class="relative justify-between items-center w-full flex pt-5 lg:pt-0">
+                  <input
+                    class="pb-2 w-full outline-none text-[18px] border-b-[1px] border-black"
+                    type="text"
+                    placeholder="Find a store" />
+                  <img
+                    class="cursor-pointer absolute right-20 size-[35px]"
+                    src="../../images/reward/search.png"
+                    alt="" />
+                  <!-- filter button -->
+                  <button
+                    id="filter-btn"
+                    class="hover:bg-[#e9f0ee] px-[18px] py-[5px] text-green-700 font-medium border-[1px] border-green-700 rounded-full">
+                    Filter
+                  </button>
+                </div>
+              </div>
+            </div>
+
+            <!-- Calling component from JS -->
+            <div id="component-hide">
+              <div
+                id="button-up"
+                class="card-location border-[#00754a] bg-[#e9f0ee] hover:bg-gray-100 border-2 rounded-lg py-[20px] flex justify-between items-center">
+                <!-- content -->
+                <div class="pl-10">
+                  <h1 class="font-bold text-[14px]">Olympia Mall</h1>
+                  <p class="text-[13px]">
+                    Shop 1, G/F, Sampovmeas Road, Phnom Penh
+                  </p>
+                  <p class="text-[13px]">2.5 miles away</p>
+                </div>
+                <!-- button -->
+                <div class="pr-4 pl-10">
+                  <!-- heart and problem mark -->
+                  <div class="flex justify-end px-2 gap-4">
+                    <img
+                      class="size-[20px] cursor-pointer"
+                      src="../../images/reward/heart.png"
+                      alt="" />
+                    <img
+                      class="rotate-180 size-[20px] cursor-pointer"
+                      src="../../images/reward/problem.png"
+                      alt="" />
+                  </div>
+                  <div class="pt-2">
+                    <a href="../../pages/menu/menu.html">
+                      <button
+                        id="order-btn"
+                        class="order-btn hover:bg-opacity-90 px-[18px] py-[5px] text-[14px] text-white bg-[#00754a] font-medium border-[1px] rounded-full">
+                        Order Here
+                      </button>
+                    </a>
+                  </div>
+                </div>
+              </div>
+              <card-component></card-component>
+            </div>
+
+            <!-- filter content -->
+            <div
+              id="filter-content"
+              class="duration-300 z-[4] opacity-0 pointer-events-none w-full lg:h-[140vh] h-[200vh] lg:absolute fixed lg:top-0 top-20 scale-[120%] bg-white overflow-y-hidden">
+              <div class="px-8">
+                <div class="flex item justify-end pt-6">
+                  <img
+                    id="close-btn"
+                    class="cursor-pointer size-[16px]"
+                    src="../../images/reward/close.png"
+                    alt="" />
+                </div>
+                <h1 class="text-[28px] font-semibold py-6">Filters</h1>
+              </div>
+
+              <ul class="flex flex-col">
+                <h2
+                  class="text-[16px] py-2 bg-[#e8e8e8] text-[#6b6b6b] font-semibold pl-8">
+                  STORE HOURS
+                </h2>
+                <span class="flex gap-4 py-4 pl-8"
+                  ><img
+                    class="size-[25px]"
+                    src="../../images/reward/open.png"
+                    alt="" />
+                  <p class="text-[#767676]">Open Now</p></span
+                >
+                <span class="flex gap-4 py-4 pl-8"
+                  ><img
+                    class="size-[25px]"
+                    src="../../images/reward/open-24-hours.png"
+                    alt="" />
+                  <p class="text-[#767676]">Open 24 hours per day</p></span
+                >
+              </ul>
+
+              <ul class="flex flex-col">
+                <h2
+                  class="text-[16px] py-2 bg-[#e8e8e8] text-[#6b6b6b] font-semibold pl-8">
+                  ORDER & PICKUP OPTIONS
+                </h2>
+                <span class="flex gap-4 py-4 pl-8"
+                  ><img
+                    class="size-[25px]"
+                    src="../../images/reward/shopping.png"
+                    alt="" />
+                  <p class="text-[#767676]">Mobile Order and Pay</p></span
+                >
+                <span class="flex gap-4 py-4 pl-8"
+                  ><img
+                    class="size-[25px]"
+                    src="../../images/reward/market.png"
+                    alt="" />
+                  <p class="text-[#767676]">In store</p></span
+                >
+                <span class="flex gap-4 py-4 pl-8"
+                  ><img
+                    class="size-[25px]"
+                    src="../../images/reward/drive-thru.png"
+                    alt="" />
+                  <p class="text-[#767676]">Drive-Thru</p></span
+                >
+                <span class="flex gap-4 py-4 pl-8"
+                  ><img
+                    class="size-[25px]"
+                    src="../../images/reward/pickup-car.png"
+                    alt="" />
+                  <p class="text-[#767676]">Curbside</p></span
+                >
+                <span class="flex gap-4 py-4 pl-8"
+                  ><img
+                    class="size-[25px]"
+                    src="../../images/reward/coffee-table.png"
+                    alt="" />
+                  <p class="text-[#767676]">Outdoor</p></span
+                >
+              </ul>
+
+              <ul class="flex flex-col">
+                <h2
+                  class="text-[16px] py-2 bg-[#e8e8e8] text-[#6b6b6b] font-semibold pl-8">
+                  AMENITIES
+                </h2>
+                <span class="flex gap-4 py-4 pl-8"
+                  ><img
+                    class="size-[25px]"
+                    src="../../images/reward/starbuck.png"
+                    alt="" />
+                  <p class="text-[#767676]">
+                    Starbucks Reserve-Clover Brewed
+                  </p></span
+                >
+                <span class="flex gap-4 py-4 pl-8"
+                  ><img
+                    class="size-[25px]"
+                    src="../../images/reward/sun-umbrella.png"
+                    alt="" />
+                  <p class="text-[#767676]">Cafe Seating</p></span
+                >
+
+                <span class="flex gap-4 py-4 pl-8"
+                  ><img
+                    class="size-[25px]"
+                    src="../../images/reward/wifi.png"
+                    alt="" />
+                  <p class="text-[#767676]">Starbucks Wi-Fi</p></span
+                >
+
+                <span class="flex gap-4 py-4 pl-8"
+                  ><img
+                    class="size-[25px]"
+                    src="../../images/reward/reward.png"
+                    alt="" />
+                  <p class="text-[#767676]">Redeem Rewards</p></span
+                >
+
+                <span class="flex gap-4 py-4 pl-8"
+                  ><img
+                    class="size-[25px]"
+                    src="../../images/reward/birds.png"
+                    alt="" />
+                  <p class="text-[#767676]">Oleato Beverages</p></span
+                >
+                <span class="flex gap-4 py-4 pl-8"
+                  ><img
+                    class="size-[25px]"
+                    src="../../images/reward/sun-umbrella.png"
+                    alt="" />
+                  <p class="text-[#767676]">Outdoor Seating</p></span
+                >
+              </ul>
+
+              <ul class="flex flex-col">
+                <h2
+                  class="text-[16px] py-2 bg-[#e8e8e8] text-[#6b6b6b] font-semibold pl-8">
+                  COMPANY
+                </h2>
+                <span class="flex gap-4 py-4 pl-8"
+                  ><img
+                    class="size-[25px]"
+                    src="../../images/reward/open.png"
+                    alt="" />
+                  <p class="text-[#767676]">Customer Service</p></span
+                >
+                <span class="flex gap-4 py-4 pl-8"
+                  ><img
+                    class="size-[25px]"
+                    src="../../images/reward/open-24-hours.png"
+                    alt="" />
+                  <p class="text-[#767676]">Available 24/7</p></span
+                >
+              </ul>
+            </div>
+          </div>
+          <!-- external link -->
+          <div
+            id="external-content"
+            class="flex lg:opacity-100 opacity-0 pointer-events-none absolute bottom-0 w-full bg-white px-10 py-8 flex-col">
+            <a href="../../pages/privacy/privacy-policy.html"
+              ><h1
+                class="flex text-[16px] hover:opacity-90 text-green-700 gap-2">
+                Privacy Notice
+                <img
+                  class="size-[20px]"
+                  src="../../images/reward/external-link.png"
+                  alt="" /></h1
+            ></a>
+            <a href="../../pages/privacy/term.html"
+              ><h1
+                class="flex text-[16px] hover:opacity-90 text-green-700 gap-2 py-4">
+                Terms of Use
+                <img
+                  class="size-[20px]"
+                  src="../../images/reward/external-link.png"
+                  alt="" /></h1
+            ></a>
+            <a href="../../pages/privacy/personal-information.html"
+              ><h1
+                class="flex text-[16px] hover:opacity-90 text-green-700 gap-2">
+                Do Not Share My Personal Information
+                <img
+                  class="size-[20px]"
+                  src="../../images/reward/external-link.png"
+                  alt="" /></h1
+            ></a>
+          </div>
+        </div>
+        <!-- Google map -->
+        <div class="lg:h-full lg:w-[60%] w-full z-[3]">
+          <div class="lg:hidden sticky top-0 pb-4 pl-8 pr-8">
+            <div
+              class="relative justify-between items-center w-full flex pt-5 lg:pt-0">
+              <input
+                class="pb-2 w-full outline-none text-[18px] border-b-[1px] border-black"
+                type="text"
+                placeholder="Find a store" />
+              <img
+                class="cursor-pointer absolute right-20 size-[35px]"
+                src="../../images/reward/search.png"
+                alt="" />
+
+              <button
+                id="find-btn"
+                class="hover:bg-[#e9f0ee] px-[18px] py-[5px] text-green-700 font-medium border-[1px] border-green-700 rounded-full">
+                Filter
+              </button>
+            </div>
+          </div>
+          <iframe
+            src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d250151.42198261587!2d104.89018675!3d11.57936425!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x3109513dc76a6be3%3A0x9c010ee85ab525bb!2sPhnom%20Penh!5e0!3m2!1sen!2skh!4v1713955136091!5m2!1sen!2skh"
+            width="600"
+            height="450"
+            style="border: 0"
+            allowfullscreen=""
+            loading="lazy"
+            referrerpolicy="no-referrer-when-downgrade"
+            class="lg:h-full h-[40vh] w-full"></iframe>
+        </div>
+      </div>
+    </section>
+  </body>
+  <!-- script link component -->
+  <script type="module" src="../../script/components/layout.js"></script>
+  <script src="./orderCard.js"></script>
+  <script type="module" src="./find.js"></script>
+</html>

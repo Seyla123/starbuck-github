@@ -1,0 +1,52 @@
+    <!-- create account -->
+    
+    <div>
+        <div class="flex flex-col items-center">
+            <h1 class="md:text-3xl text-2xl text-center font-semibold md:py-12 py-8 sodan">Sign in or create an account</h1>
+            <div class=" md:p-8 px-2 pb-1 md:border rounded-xl md:shadow-md max-w-[510px] w-full">
+                <h1 class="text-sm md:text-base"><span class="text-[#00754a]">*</span> indicates required field</h1>
+                <div class="bt w-full  min-w-max overflow-hidden relative  flex items-center justify-center">
+                    <div class=" relative w-full flex items-center my-3" >
+                        <input id="userInput" type="text"
+                            class="w-full px-6 border border-gray-400 outline-none rounded-xl text-base  py-4 ">
+                        </input>
+                        <label id="userLabel" class="text-[19px] pointer-events-none duration-300 absolute left-6 top-4   cursor-text   sodan tracking-[1px]">
+                            <span class="bg-white px-1 "><span class="text-[#00754a]">*</span> Username or email address</span>
+                        </label>
+                    </div>
+                </div>
+                <div id="reqUser" class="hidden flex absolute items-center text-sm text-red-600 gap-2 sodan font-medium">
+                    <span>
+                        <svg aria-hidden="true" class="valign-middle fieldStatus__icon" focusable="false" preserveAspectRatio="xMidYMid meet" viewBox="0 0 24 24" style="width: 20px; height: 20px; overflow: visible; fill: currentcolor;"><path d="M9.1005 3H14.8995C15.4299 3 15.9386 3.21071 16.3137 3.58579L20.4142 7.68629C20.7893 8.06136 21 8.57007 21 9.1005L21 14.8995C21 15.4299 20.7893 15.9386 20.4142 16.3137L16.3137 20.4142C15.9386 20.7893 15.4299 21 14.8995 21H9.10051C8.57007 21 8.06136 20.7893 7.68629 20.4142L3.58579 16.3137C3.21071 15.9386 3 15.4299 3 14.8995V9.10051C3 8.57007 3.21071 8.06136 3.58579 7.68629L7.68629 3.58579C8.06136 3.21071 8.57007 3 9.1005 3ZM16.7071 7.29289C16.3166 6.90237 15.6834 6.90237 15.2929 7.29289L12 10.5858L8.70711 7.29289C8.31658 6.90237 7.68342 6.90237 7.29289 7.29289C6.90237 7.68342 6.90237 8.31658 7.29289 8.70711L10.5858 12L7.29289 15.2929C6.90237 15.6834 6.90237 16.3166 7.29289 16.7071C7.68342 17.0976 8.31658 17.0976 8.70711 16.7071L12 13.4142L15.2929 16.7071C15.6834 17.0976 16.3166 17.0976 16.7071 16.7071C17.0976 16.3166 17.0976 15.6834 16.7071 15.2929L13.4142 12L16.7071 8.70711C17.0976 8.31658 17.0976 7.68342 16.7071 7.29289Z"></path></svg>
+                    </span>
+                    <span>Enter an email/username.</span>
+                </div>
+                <div class="bt w-full  min-w-max overflow-hidden relative  flex items-center mt-8 justify-center">
+                    <div class=" relative w-full flex items-center my-3" >
+                        <input id="passInput" type="text"
+                            class="w-full px-6 border border-gray-400 outline-none rounded-xl text-base  py-4 ">
+                        </input>
+                        <label id="passLabel" class="text-[19px] pointer-events-none duration-300 absolute left-6 top-4   cursor-text   sodan tracking-[1px]">
+                            <span class="bg-white px-1 "><span class="text-[#00754a]">*</span> Password</span>
+                        </label>
+                    </div>
+                </div>
+                <div id="reqUPass" class="hidden flex absolute items-center text-sm text-red-600 gap-2 sodan font-medium">
+                    <span>
+                        <svg aria-hidden="true" class="valign-middle fieldStatus__icon" focusable="false" preserveAspectRatio="xMidYMid meet" viewBox="0 0 24 24" style="width: 20px; height: 20px; overflow: visible; fill: currentcolor;"><path d="M9.1005 3H14.8995C15.4299 3 15.9386 3.21071 16.3137 3.58579L20.4142 7.68629C20.7893 8.06136 21 8.57007 21 9.1005L21 14.8995C21 15.4299 20.7893 15.9386 20.4142 16.3137L16.3137 20.4142C15.9386 20.7893 15.4299 21 14.8995 21H9.10051C8.57007 21 8.06136 20.7893 7.68629 20.4142L3.58579 16.3137C3.21071 15.9386 3 15.4299 3 14.8995V9.10051C3 8.57007 3.21071 8.06136 3.58579 7.68629L7.68629 3.58579C8.06136 3.21071 8.57007 3 9.1005 3ZM16.7071 7.29289C16.3166 6.90237 15.6834 6.90237 15.2929 7.29289L12 10.5858L8.70711 7.29289C8.31658 6.90237 7.68342 6.90237 7.29289 7.29289C6.90237 7.68342 6.90237 8.31658 7.29289 8.70711L10.5858 12L7.29289 15.2929C6.90237 15.6834 6.90237 16.3166 7.29289 16.7071C7.68342 17.0976 8.31658 17.0976 8.70711 16.7071L12 13.4142L15.2929 16.7071C15.6834 17.0976 16.3166 17.0976 16.7071 16.7071C17.0976 16.3166 17.0976 15.6834 16.7071 15.2929L13.4142 12L16.7071 8.70711C17.0976 8.31658 17.0976 7.68342 16.7071 7.29289Z"></path></svg>
+                    </span>
+
+                </div>
+                <div class="bg-green-400 w-full h-[20vh]"></div>
+            </div>
+        </div>
+    </div>
+    <!-- join now -->
+    <div>
+        <div class="sm:w-[350px] mx-auto text-center max-w-full  md:mb-96 w-auto pt-24 mb-[500px]">
+            <h1 class="text-sm hind font-semibold tracking-[1px] text-[#00754a] leading-loose">JOIN STARBUCKS<span class="text-xs font-light font-sans">® </span>REWARDS</h1>
+            <h1 class="my-4 font-normal">Join Starbucks<span class="text-xs">®</span> Rewards to earn free food and drinks, get free refills, pay and order with your phone, and more.</h1>
+            <a href="../../pages/join-now/join-now.html" class="text-[#00754a] py-2 px-4 border-[1px] font-semibold border-[#00754a] hover:bg-[#e3edea] duration-200 rounded-full ">Join now</a>
+        </div>
+        <hr>
+    </div>
